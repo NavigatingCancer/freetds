@@ -1,0 +1,380 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -S
+dpkg-buildpackage: source package freetds
+dpkg-buildpackage: source version 1.00.54-1
+dpkg-buildpackage: source distribution UNRELEASED
+dpkg-buildpackage: source changed by NC SRE Team <nc-admin@localhost>
+ dpkg-source --before-build freetds-1.00.54
+ fakeroot debian/rules clean
+dh clean --with autoreconf 
+   dh_testdir
+   dh_auto_clean
+	make -j1 distclean
+make[1]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54'
+Making distclean in include
+make[2]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/include'
+Making distclean in freetds
+make[3]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/include/freetds'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "version.h" || rm -f version.h
+test . = "." || test -z "" || rm -f 
+test -z "sysconfdir.h" || rm -f sysconfdir.h
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -f Makefile
+make[3]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/include/freetds'
+make[3]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/include'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "tds_sysdep_public.h" || rm -f tds_sysdep_public.h
+test . = "." || test -z "" || rm -f 
+test -z "tds_sysdep_public.h" || rm -f tds_sysdep_public.h
+rm -f config.h stamp-h1
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[3]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/include'
+rm -f Makefile
+make[2]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/include'
+Making distclean in src
+make[2]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src'
+Making distclean in replacements
+make[3]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/replacements'
+Making distclean in .
+make[4]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/replacements'
+rm -rf .libs _libs
+test -z "libreplacements.la" || rm -f libreplacements.la
+rm -f ./so_locations
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/replacements'
+Making distclean in unittests
+make[4]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/replacements/unittests'
+ rm -f mutex1 condition strings passarg strtok_r
+rm -rf .libs _libs
+rm -f *.o
+test -z "mutex1.log condition.log strings.log passarg.log strtok_r.log" || rm -f mutex1.log condition.log strings.log passarg.log strtok_r.log
+test -z "mutex1.trs condition.trs strings.trs passarg.trs strtok_r.trs" || rm -f mutex1.trs condition.trs strings.trs passarg.trs strtok_r.trs
+test -z "test-suite.log" || rm -f test-suite.log
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/replacements/unittests'
+rm -rf .deps ./.deps
+rm -f Makefile
+make[3]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/replacements'
+Making distclean in tds
+make[3]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/tds'
+Making distclean in .
+make[4]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/tds'
+rm -rf .libs _libs
+test -z "libtds.la" || rm -f libtds.la
+rm -f ./so_locations
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/tds'
+Making distclean in unittests
+make[4]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/tds/unittests'
+ rm -f t0001 t0002 t0003 t0004 t0005 t0006 t0007 t0008 dynamic1 convert dataread utf8_1 utf8_2 utf8_3 numeric iconv_fread toodynamic readconf charconv nulls corrupt challenge
+test -z "tdsdump.out" || rm -f tdsdump.out
+rm -rf .libs _libs
+rm -f *.o
+test -z "t0001.log t0002.log t0003.log t0004.log t0005.log t0006.log t0007.log t0008.log dynamic1.log convert.log dataread.log utf8_1.log utf8_2.log utf8_3.log numeric.log iconv_fread.log toodynamic.log readconf.log charconv.log nulls.log corrupt.log challenge.log" || rm -f t0001.log t0002.log t0003.log t0004.log t0005.log t0006.log t0007.log t0008.log dynamic1.log convert.log dataread.log utf8_1.log utf8_2.log utf8_3.log numeric.log iconv_fread.log toodynamic.log readconf.log charconv.log nulls.log corrupt.log challenge.log
+test -z "t0001.trs t0002.trs t0003.trs t0004.trs t0005.trs t0006.trs t0007.trs t0008.trs dynamic1.trs convert.trs dataread.trs utf8_1.trs utf8_2.trs utf8_3.trs numeric.trs iconv_fread.trs toodynamic.trs readconf.trs charconv.trs nulls.trs corrupt.trs challenge.trs" || rm -f t0001.trs t0002.trs t0003.trs t0004.trs t0005.trs t0006.trs t0007.trs t0008.trs dynamic1.trs convert.trs dataread.trs utf8_1.trs utf8_2.trs utf8_3.trs numeric.trs iconv_fread.trs toodynamic.trs readconf.trs charconv.trs nulls.trs corrupt.trs challenge.trs
+test -z "test-suite.log" || rm -f test-suite.log
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/tds/unittests'
+rm -rf ./.deps
+rm -f Makefile
+make[3]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/tds'
+Making distclean in ctlib
+make[3]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/ctlib'
+Making distclean in .
+make[4]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/ctlib'
+test -z "libct.la" || rm -f libct.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/ctlib'
+Making distclean in unittests
+make[4]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/ctlib/unittests'
+ rm -f t0001 t0002 t0003 t0004 t0005 t0006 t0007 t0008 t0009 connect_fail ct_options lang_ct_param array_bind cs_diag get_send_data rpc_ct_param rpc_ct_setparam ct_diagclient ct_diagserver ct_diagall cs_config cancel blk_in blk_out ct_cursor ct_cursors ct_dynamic blk_in2 datafmt rpc_fail row_count
+test -z "tdsdump.out" || rm -f tdsdump.out
+rm -rf .libs _libs
+rm -f *.o
+test -z "t0001.log t0002.log t0003.log t0004.log t0005.log t0006.log t0007.log t0008.log t0009.log connect_fail.log ct_options.log lang_ct_param.log array_bind.log cs_diag.log get_send_data.log rpc_ct_param.log rpc_ct_setparam.log ct_diagclient.log ct_diagserver.log ct_diagall.log cs_config.log cancel.log blk_in.log blk_out.log ct_cursor.log ct_cursors.log ct_dynamic.log blk_in2.log datafmt.log rpc_fail.log row_count.log" || rm -f t0001.log t0002.log t0003.log t0004.log t0005.log t0006.log t0007.log t0008.log t0009.log connect_fail.log ct_options.log lang_ct_param.log array_bind.log cs_diag.log get_send_data.log rpc_ct_param.log rpc_ct_setparam.log ct_diagclient.log ct_diagserver.log ct_diagall.log cs_config.log cancel.log blk_in.log blk_out.log ct_cursor.log ct_cursors.log ct_dynamic.log blk_in2.log datafmt.log rpc_fail.log row_count.log
+test -z "t0001.trs t0002.trs t0003.trs t0004.trs t0005.trs t0006.trs t0007.trs t0008.trs t0009.trs connect_fail.trs ct_options.trs lang_ct_param.trs array_bind.trs cs_diag.trs get_send_data.trs rpc_ct_param.trs rpc_ct_setparam.trs ct_diagclient.trs ct_diagserver.trs ct_diagall.trs cs_config.trs cancel.trs blk_in.trs blk_out.trs ct_cursor.trs ct_cursors.trs ct_dynamic.trs blk_in2.trs datafmt.trs rpc_fail.trs row_count.trs" || rm -f t0001.trs t0002.trs t0003.trs t0004.trs t0005.trs t0006.trs t0007.trs t0008.trs t0009.trs connect_fail.trs ct_options.trs lang_ct_param.trs array_bind.trs cs_diag.trs get_send_data.trs rpc_ct_param.trs rpc_ct_setparam.trs ct_diagclient.trs ct_diagserver.trs ct_diagall.trs cs_config.trs cancel.trs blk_in.trs blk_out.trs ct_cursor.trs ct_cursors.trs ct_dynamic.trs blk_in2.trs datafmt.trs rpc_fail.trs row_count.trs
+test -z "test-suite.log" || rm -f test-suite.log
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/ctlib/unittests'
+rm -rf ./.deps
+rm -f Makefile
+make[3]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/ctlib'
+Making distclean in dblib
+make[3]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/dblib'
+Making distclean in .
+make[4]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/dblib'
+test -z "libsybdb.la" || rm -f libsybdb.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/dblib'
+Making distclean in unittests
+make[4]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/dblib/unittests'
+ rm -f t0001 t0002 t0003 t0004 t0005 t0006 t0007 t0008 t0009 t0011 t0012 t0013 t0014 t0015 t0016 t0017 t0018 t0019 t0020 t0021 t0022 t0023 rpc dbmorecmds bcp thread text_buffer done_handling timeout hang null null2 setnull numeric pending cancel spid bcp_getl
+test -z "tdsdump.out t0013.out t0014.out t0016.out t0016.err t0017.err t0017.out" || rm -f tdsdump.out t0013.out t0014.out t0016.out t0016.err t0017.err t0017.out
+rm -rf .libs _libs
+rm -f *.o
+test -z "t0001.log t0002.log t0003.log t0004.log t0005.log t0006.log t0007.log t0008.log t0009.log t0011.log t0012.log t0013.log t0014.log t0015.log t0016.log t0017.log t0018.log t0019.log t0020.log t0021.log t0022.log t0023.log rpc.log dbmorecmds.log bcp.log thread.log text_buffer.log done_handling.log timeout.log hang.log null.log null2.log setnull.log numeric.log pending.log cancel.log spid.log bcp_getl.log" || rm -f t0001.log t0002.log t0003.log t0004.log t0005.log t0006.log t0007.log t0008.log t0009.log t0011.log t0012.log t0013.log t0014.log t0015.log t0016.log t0017.log t0018.log t0019.log t0020.log t0021.log t0022.log t0023.log rpc.log dbmorecmds.log bcp.log thread.log text_buffer.log done_handling.log timeout.log hang.log null.log null2.log setnull.log numeric.log pending.log cancel.log spid.log bcp_getl.log
+test -z "t0001.trs t0002.trs t0003.trs t0004.trs t0005.trs t0006.trs t0007.trs t0008.trs t0009.trs t0011.trs t0012.trs t0013.trs t0014.trs t0015.trs t0016.trs t0017.trs t0018.trs t0019.trs t0020.trs t0021.trs t0022.trs t0023.trs rpc.trs dbmorecmds.trs bcp.trs thread.trs text_buffer.trs done_handling.trs timeout.trs hang.trs null.trs null2.trs setnull.trs numeric.trs pending.trs cancel.trs spid.trs bcp_getl.trs" || rm -f t0001.trs t0002.trs t0003.trs t0004.trs t0005.trs t0006.trs t0007.trs t0008.trs t0009.trs t0011.trs t0012.trs t0013.trs t0014.trs t0015.trs t0016.trs t0017.trs t0018.trs t0019.trs t0020.trs t0021.trs t0022.trs t0023.trs rpc.trs dbmorecmds.trs bcp.trs thread.trs text_buffer.trs done_handling.trs timeout.trs hang.trs null.trs null2.trs setnull.trs numeric.trs pending.trs cancel.trs spid.trs bcp_getl.trs
+test -z "test-suite.log" || rm -f test-suite.log
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/dblib/unittests'
+rm -rf ./.deps
+rm -f Makefile
+make[3]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/dblib'
+Making distclean in server
+make[3]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/server'
+rm -rf .libs _libs
+test -z "libtdssrv.la" || rm -f libtdssrv.la
+rm -f ./so_locations
+ rm -f tdssrv
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/server'
+Making distclean in pool
+make[3]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/pool'
+ rm -f tdspool
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[3]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/pool'
+Making distclean in apps
+make[3]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/apps'
+Making distclean in fisql
+make[4]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/apps/fisql'
+ rm -f fisql
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/apps/fisql'
+make[4]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/apps'
+ rm -f tsql freebcp bsqldb defncopy datacopy
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/apps'
+rm -rf ./.deps
+rm -f Makefile
+make[3]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/apps'
+Making distclean in odbc
+make[3]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/odbc'
+Making distclean in .
+make[4]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/odbc'
+test -z "setup.res" || rm -f setup.res
+test -z "libtdsodbc.la" || rm -f libtdsodbc.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f *.o
+rm -f *.lo
+rm -f *.tab.c
+test -z "version.rc" || rm -f version.rc
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[4]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/odbc'
+Making distclean in unittests
+make[4]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/odbc/unittests'
+ rm -f t0001 t0002 t0003 t0004 connect print date norowset funccall lang_error tables binary_test moreandcount earlybind putdata params raiserror getdata transaction type genparams preperror prepare_results testodbc data error rebindpar rpc convert_error typeinfo const_params insert_speed compute timeout array array_out cursor1 scroll cursor2 describecol copydesc prepclose warning paramcore timeout2 timeout3 connect2 timeout4 freeclose cursor3 cursor4 cursor5 attributes hidden blob1 cancel wchar rowset transaction2 cursor6 cursor7 utf8 utf8_2 stats descrec peter test64 prepare_warn long_error mars1 array_error describecol2 closestmt bcp oldpwd
+rm -rf .libs _libs
+rm -f *.o
+test -z "t0001.log t0002.log t0003.log t0004.log connect.log print.log date.log norowset.log funccall.log lang_error.log tables.log binary_test.log moreandcount.log earlybind.log putdata.log params.log raiserror.log getdata.log transaction.log type.log genparams.log preperror.log prepare_results.log testodbc.log data.log error.log rebindpar.log rpc.log convert_error.log typeinfo.log const_params.log insert_speed.log compute.log timeout.log array.log array_out.log cursor1.log scroll.log cursor2.log describecol.log copydesc.log prepclose.log warning.log paramcore.log timeout2.log timeout3.log connect2.log timeout4.log freeclose.log cursor3.log cursor4.log cursor5.log attributes.log hidden.log blob1.log cancel.log wchar.log rowset.log transaction2.log cursor6.log cursor7.log utf8.log utf8_2.log stats.log descrec.log peter.log test64.log prepare_warn.log long_error.log mars1.log array_error.log describecol2.log closestmt.log bcp.log" || rm -f t0001.log t0002.log t0003.log t0004.log connect.log print.log date.log norowset.log funccall.log lang_error.log tables.log binary_test.log moreandcount.log earlybind.log putdata.log params.log raiserror.log getdata.log transaction.log type.log genparams.log preperror.log prepare_results.log testodbc.log data.log error.log rebindpar.log rpc.log convert_error.log typeinfo.log const_params.log insert_speed.log compute.log timeout.log array.log array_out.log cursor1.log scroll.log cursor2.log describecol.log copydesc.log prepclose.log warning.log paramcore.log timeout2.log timeout3.log connect2.log timeout4.log freeclose.log cursor3.log cursor4.log cursor5.log attributes.log hidden.log blob1.log cancel.log wchar.log rowset.log transaction2.log cursor6.log cursor7.log utf8.log utf8_2.log stats.log descrec.log peter.log test64.log prepare_warn.log long_error.log mars1.log array_error.log describecol2.log closestmt.log bcp.log
+test -z "t0001.trs t0002.trs t0003.trs t0004.trs connect.trs print.trs date.trs norowset.trs funccall.trs lang_error.trs tables.trs binary_test.trs moreandcount.trs earlybind.trs putdata.trs params.trs raiserror.trs getdata.trs transaction.trs type.trs genparams.trs preperror.trs prepare_results.trs testodbc.trs data.trs error.trs rebindpar.trs rpc.trs convert_error.trs typeinfo.trs const_params.trs insert_speed.trs compute.trs timeout.trs array.trs array_out.trs cursor1.trs scroll.trs cursor2.trs describecol.trs copydesc.trs prepclose.trs warning.trs paramcore.trs timeout2.trs timeout3.trs connect2.trs timeout4.trs freeclose.trs cursor3.trs cursor4.trs cursor5.trs attributes.trs hidden.trs blob1.trs cancel.trs wchar.trs rowset.trs transaction2.trs cursor6.trs cursor7.trs utf8.trs utf8_2.trs stats.trs descrec.trs peter.trs test64.trs prepare_warn.trs long_error.trs mars1.trs array_error.trs describecol2.trs closestmt.trs bcp.trs" || rm -f t0001.trs t0002.trs t0003.trs t0004.trs connect.trs print.trs date.trs norowset.trs funccall.trs lang_error.trs tables.trs binary_test.trs moreandcount.trs earlybind.trs putdata.trs params.trs raiserror.trs getdata.trs transaction.trs type.trs genparams.trs preperror.trs prepare_results.trs testodbc.trs data.trs error.trs rebindpar.trs rpc.trs convert_error.trs typeinfo.trs const_params.trs insert_speed.trs compute.trs timeout.trs array.trs array_out.trs cursor1.trs scroll.trs cursor2.trs describecol.trs copydesc.trs prepclose.trs warning.trs paramcore.trs timeout2.trs timeout3.trs connect2.trs timeout4.trs freeclose.trs cursor3.trs cursor4.trs cursor5.trs attributes.trs hidden.trs blob1.trs cancel.trs wchar.trs rowset.trs transaction2.trs cursor6.trs cursor7.trs utf8.trs utf8_2.trs stats.trs descrec.trs peter.trs test64.trs prepare_warn.trs long_error.trs mars1.trs array_error.trs describecol2.trs closestmt.trs bcp.trs
+test -z "test-suite.log" || rm -f test-suite.log
+rm -f *.lo
+rm -f *.tab.c
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+test -z "odbc.ini odbcinst.ini" || rm -f odbc.ini odbcinst.ini
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -rf ./.deps
+rm -f Makefile
+make[4]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/odbc/unittests'
+rm -rf ./.deps
+rm -f Makefile
+make[3]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src/odbc'
+make[3]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+make[3]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src'
+rm -f Makefile
+make[2]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/src'
+Making distclean in doc
+make[2]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/doc'
+test -z "dblib.api.body ctlib.api.body odbc.api.body dblib.api.sgml ctlib.api.sgml odbc.api.sgml freebcp.1 tsql.1 osql.1 bsqldb.1 bsqlodbc.1 defncopy.1 datacopy.1 fisql.1 freetds.conf.5" || rm -f dblib.api.body ctlib.api.body odbc.api.body dblib.api.sgml ctlib.api.sgml odbc.api.sgml freebcp.1 tsql.1 osql.1 bsqldb.1 bsqlodbc.1 defncopy.1 datacopy.1 fisql.1 freetds.conf.5
+rm -rf .libs _libs
+rm -rf userguide.dsl doxy.log \
+	dblib.api.sgml	\
+	ctlib.api.sgml	\
+	 odbc.api.sgml   
+rm -f *.lo
+test -z "freebcp.1 tsql.1 osql.1 bsqldb.1 bsqlodbc.1 defncopy.1 datacopy.1 fisql.1 freetds.conf.5" || rm -f freebcp.1 tsql.1 osql.1 bsqldb.1 bsqlodbc.1 defncopy.1 datacopy.1 fisql.1 freetds.conf.5
+test . = "." || test -z "" || rm -f 
+rm -rf ./userguide ./reference
+rm -f Makefile
+make[2]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/doc'
+Making distclean in samples
+make[2]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/samples'
+test -z "unixodbc.freetds.driver.template" || rm -f unixodbc.freetds.driver.template
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[2]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/samples'
+Making distclean in win32
+make[2]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/win32'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "freetds.nsh" || rm -f freetds.nsh
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[2]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/win32'
+Making distclean in vms
+make[2]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/vms'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[2]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/vms'
+Making distclean in misc
+make[2]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/misc'
+rm -rf .libs _libs
+rm -f *.lo
+test -z "" || rm -f 
+test . = "." || test -z "" || rm -f 
+rm -f Makefile
+make[2]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54/misc'
+make[2]: Entering directory '/home/nc-admin/crimson-freetds/freetds-1.00.54'
+rm -rf .libs _libs
+find . \( -name \*.test_output -o -name \*.bb -o -name \*.bbg -o -name \*.da -o -name \*.gc\* \) -exec rm -f {} \;
+rm -f *.lo
+test -z "freetds.spec" || rm -f freetds.spec
+test . = "." || test -z "" || rm -f 
+rm -f libtool config.lt
+rm -f TAGS ID GTAGS GRTAGS GSYMS GPATH tags
+rm -f cscope.out cscope.in.out cscope.po.out cscope.files
+make[2]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54'
+rm -f config.status config.cache config.log configure.lineno config.status.lineno
+rm -f Makefile
+make[1]: Leaving directory '/home/nc-admin/crimson-freetds/freetds-1.00.54'
+   dh_autoreconf_clean
+	rm -f -- ./include/config.h.in\~ ./autom4te.cache/traces.0 ./autom4te.cache/output.1 ./autom4te.cache/output.0 ./autom4te.cache/requests ./autom4te.cache/traces.1 ./Makefile.in
+	rm -f debian/autoreconf.before debian/autoreconf.after
+   dh_clean
+	rm -f debian/debhelper-build-stamp
+	rm -f debian/freetds.substvars
+	rm -f debian/freetds.*.debhelper
+	rm -rf debian/freetds/
+	cp -an --reflink=auto debian/.debhelper/bucket/files/fbc2337aa59a204f5d74743b82c8be7aab8b39853b4e54a888008f70430c4305 debian/.debhelper/bucket/files/fbc2337aa59a204f5d74743b82c8be7aab8b39853b4e54a888008f70430c4305.tmp
+	mv -Tf debian/.debhelper/bucket/files/fbc2337aa59a204f5d74743b82c8be7aab8b39853b4e54a888008f70430c4305.tmp config.guess
+	cp -an --reflink=auto debian/.debhelper/bucket/files/72e02ea93447038f8ced24f296b31e0f397bbcc6b32abdcf9b38c80f153433fd debian/.debhelper/bucket/files/72e02ea93447038f8ced24f296b31e0f397bbcc6b32abdcf9b38c80f153433fd.tmp
+	mv -Tf debian/.debhelper/bucket/files/72e02ea93447038f8ced24f296b31e0f397bbcc6b32abdcf9b38c80f153433fd.tmp config.sub
+	rm -rf debian/.debhelper/
+	rm -f debian/*.debhelper.log
+	rm -f debian/files
+	find .  \( \( \
+		\( -path .\*/.git -o -path .\*/.svn -o -path .\*/.bzr -o -path .\*/.hg -o -path .\*/CVS \) -prune -o -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a -name autom4te.cache -prune -exec rm -rf {} + \) \)
+	rm -f *-stamp
+ dpkg-source -b freetds-1.00.54
+dpkg-source: warning: native package version may not have a revision
+dpkg-source: info: using source format '3.0 (native)'
+dpkg-source: info: building freetds in freetds_1.00.54-1.tar.xz
+dpkg-source: info: building freetds in freetds_1.00.54-1.dsc
+ dpkg-genchanges -S >../freetds_1.00.54-1_source.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build freetds-1.00.54
+dpkg-buildpackage: source-only upload: Debian-native package
+Now running lintian...
+E: freetds changes: changed-by-address-malformed NC SRE Team <nc-admin@localhost>
+E: freetds changes: changed-by-address-is-on-localhost NC SRE Team <nc-admin@localhost>
+W: freetds source: native-package-with-dash-version
+E: freetds source: source-is-missing src/dblib/unittests/data.bin
+W: freetds source: quilt-series-but-no-build-dep
+W: freetds source: syntax-error-in-dep5-copyright line 4586: Continuation line outside a paragraph (maybe line 4585 should be " .").
+W: freetds source: out-of-date-standards-version 3.9.6 (current is 3.9.7)
+W: freetds source: debian-watch-file-in-native-package
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile freetds_1.00.54-1.dsc NC SRE Team <nc-admin@localhost>
+gpg: skipped "NC SRE Team <nc-admin@localhost>": secret key not available
+gpg: /tmp/debsign.AcFv9xOR/freetds_1.00.54-1.dsc: clearsign failed: secret key not available
+debsign: gpg error occurred!  Aborting....

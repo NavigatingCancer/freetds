@@ -1,0 +1,5 @@
+freetds (1.00.54-1) UNRELEASED; urgency=low
+
+  * Compiled freetds 1.00.54 with SSL support
+
+ -- NavigatingCancer SRE Team <sre@navigatingcancer.com>  Tue, 15 Aug 2017 23:16:34 +0000

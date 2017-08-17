@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 15 Aug 2017 23:16:34 +0000
+Source: freetds
+Binary: freetds
+Architecture: source amd64
+Version: 1.00.54-1
+Distribution: UNRELEASED
+Urgency: low
+Maintainer: Navigating Cancer SRE Team <sre@navigatingcancer.com>
+Changed-By: NavigatingCancer SRE Team <sre@navigatingcancer.com>
+Description:
+ freetds    - FreeTDS 1.00.54 SQL Server Libraries
+Changes:
+ freetds (1.00.54-1) UNRELEASED; urgency=low
+ .
+   * Compiled freetds 1.00.54 with SSL support
+Checksums-Sha1:
+ 378a72d16b37b929fea9dfd57d6636420ac1c9d8 1498 freetds_1.00.54-1.dsc
+ cca4ac1c909853a0f5a07236e21fd154afc971d4 1064284 freetds_1.00.54-1.tar.xz
+ 4f5520d64be1ef779f919e72d0ccabe10d1602c6 473668 freetds_1.00.54-1_amd64.deb
+Checksums-Sha256:
+ 1fa1ca94d826c7ee2ff1e0b7c44b695c870f1764d5a93ae9449293330589453c 1498 freetds_1.00.54-1.dsc
+ 21b93465e5429982047225b16a0310796e621ebcb7547004c744632de696cc22 1064284 freetds_1.00.54-1.tar.xz
+ ce21437d1d07e80a1e53f21266e491d126a45f523ec4521b0952efe8f7150f39 473668 freetds_1.00.54-1_amd64.deb
+Files:
+ b90f201952ce2ed008962f0848589245 1498 libs extra freetds_1.00.54-1.dsc
+ 4b9825e9faad7c90ff1c92a9e70103b0 1064284 libs extra freetds_1.00.54-1.tar.xz
+ bbff692845c4f650819676d6bff74faf 473668 libs extra freetds_1.00.54-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBAgAGBQJZlNJoAAoJEGXlmDgUwMI2ObIP/24VDN/oCe2HN4J3yhox880y
+uev7DjvUcVPII8flT8ifrmuhIOC95gDv8FL6RFDCmvmNbL/IkMSw0Yj1lIRRJehE
+xI7YUJ4AgoelMHDbUSZ8onckkyUZD2FO9ICCp56r4x3NPRIf65q6/mD3v+qDkeRv
+lf5ZenS33sRYc43WTt4I0x3gSBoKZaDqG90fjRnGvMeqLnYWcFlz0bwhqoZ0fPPp
+FWr0wEufPBD43btwPo6wnm7qWtt7HoAWvzA3OMziPzEYPIEjkV6BabBslR6kr62n
+BgsozXhVt2y3t4h6pO8kCWKS7sF49uujHSTK8cE9cNP5TszcvhxUc5zxGrvo/hwS
+JmUEsXPoc78EqjqcyewE3zFb8wjMdQ7SiKXMqqYf8DSFYlxzPrBoqoD0T61bNBsK
+rJ4pAPSwis1ZqFPPDvx72PKgSs7Y2rjN80znYD3j6PYH7FMYciWwAbYIMqrQJzPd
+BaKFcV1uAKB+PDGTFsmrsjfV5KskSH5H6t9IgXI6YKhJ/HI3baUFYVtcXhQsm1UV
+E18wxuqcJEq4kEGfx3m4D4MvCvoOY0H0GGCrDx7fPEW/JzeO0660AxiuN5sXWL64
+J7NZLF4t78RVMbytSVYQjzIvHO6cnYx4CSXwNBCtYLC+dS+61W9kxWgi8thlljTR
+V8OCUDrreO+QE7+ul1KB
+=lcZz
+-----END PGP SIGNATURE-----
