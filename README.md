@@ -9,7 +9,7 @@ via freetds.conf or by TinyTDS/any other client, so is merely a best fallback de
 
 See http://www.freetds.org/userguide/choosingtdsprotocol.htm for more information on TDS protocol versions.
 
-### Compile Flags in this Package
+## Compile Flags in this Package
 
 * *`--with-openssl`* This is compiled with OpenSSL support. Requires OpenSSL > 1.0.1.
 * *`--with-tdsver=7.3`* (As mentioned above)
@@ -17,11 +17,17 @@ See http://www.freetds.org/userguide/choosingtdsprotocol.htm for more informatio
 * *`--enable-krb5`* (Enable Kerberos support. With Kerberos you can connect to server using your stored Kerberos ticket.)
 * *`--disable-debug`* (Removes debug symbols for performance)
 
-
 ### Building Debian Package
+
+#### Install Links
+
+<https://www.freetds.org>
+<https://community.linuxmint.com/tutorial/view/162>
+<https://bysany.net/20180318/>
 
 Originally this was built with the debmake tools. This version is building with 'checkinstall'
 From freeTDS source directory
+
 ```bash
 sudo apt install checkinstall
  ./configure --with-openssl --enable-msdblib --enable-krb5 --enable-krb5 --with-tdsver=7.3
