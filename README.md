@@ -21,9 +21,11 @@ See http://www.freetds.org/userguide/choosingtdsprotocol.htm for more informatio
 
 #### Install Links
 
-<https://www.freetds.org>
-<https://community.linuxmint.com/tutorial/view/162>
-<https://bysany.net/20180318/>
+* <https://www.freetds.org>
+
+* <https://community.linuxmint.com/tutorial/view/162>
+
+* <https://bysany.net/20180318/>
 
 Originally this was built with the debmake tools. This version is building with 'checkinstall'
 From freeTDS source directory
