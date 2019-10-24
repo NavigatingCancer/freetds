@@ -32,7 +32,7 @@ From freeTDS source directory
 
 ```bash
 sudo apt install checkinstall
- ./configure --with-openssl --enable-msdblib --enable-krb5 --enable-krb5 --with-tdsver=7.3
+ ./configure --with-openssl --enable-msdblib --enable-krb5 --enable-krb5 --with-tdsver=7.3 --sysconfdir /etc/
  sudo checkinstall
 ```
 
